@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="kor">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/resourse/책장옆 복사본.png">
+    <link href="../resourse/style.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/ress/dist/ress.min.css" rel="stylesheet" type="text/css">
+    <script src="../resourse/js.js" async> </script>
+
+    <title>책장 옆</title>
+
+ </head>
+ <body>
+        <header class="page-header">
+            <a href="">
+                <img class="nav_logo" src="../resourse/책장옆.png" alt="HOME">
+            </a>
+            <!-- 버튼으로 해야 할지? -->
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="로그인.html">로그아웃</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- 사이드 바 -->
+        
+        <aside>
+            <ul class="sub-menu">
+                <li><a href="회원관리.html">&nbsp;&nbsp;&nbsp;회원 관리&nbsp;&nbsp;&nbsp;</a></li>
+                <li><a href="#">&nbsp;&nbsp;&nbsp;상품 관리&nbsp;&nbsp;&nbsp;</a></li>
+                <li><a href="결제배송관리.html">결제/배송 관리</a></li>
+                <li><a href="고객센터.html">&nbsp;&nbsp;&nbsp;고객 센터&nbsp;&nbsp;&nbsp;</a></li>
+            </ul>
+        </aside>
+
+
+        <!-- 상단이동버튼 -->
+
+        <img class="topbtn" src="../resourse/topbtn.svg" ></img>
+       
+        <!-- 탑 메뉴 -->
+
+        <table class="top-menu">
+            <tr>
+             <th><a href="#">&nbsp;&nbsp;공지사항&nbsp;&nbsp;</a></th>
+             <th><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;FAQ&nbsp;&nbsp;&nbsp;&nbsp;</a></th>
+             <th><a href="일대일문의.html">&nbsp;&nbsp;1:1문의&nbsp;&nbsp;</a></th>
+            </tr>
+        </table>
+
+        <table class="sub_top_menu">
+            <tr>
+                <th><a href="일대일문의.html"> 1:1문의 내역</th>
+                <th><a href="문의처리완료.html"> 처리 완료 내역</th>
+            </tr>
+        </table>
+        
+
+        <div class="board_wrap">
+            <div class="board_view_wrap">
+                <div class="board_view">
+                    <div class="title">
+                        글 제목이 들어갑니다.
+                    </div>
+                    <div class="info">
+                        <dl>
+                            <dt>번호</dt>
+                            <dd>1</dd>
+                        </dl>
+                        <dl>
+                            <dt>글쓴이</dt>
+                            <dd>김이름</dd>
+                        </dl>
+                        <dl>
+                            <dt>작성일</dt>
+                            <dd>2021.1.16</dd>
+                        </dl>
+                        <dl>
+                            <dt>조회</dt>
+                            <dd>33</dd>
+                        </dl>
+                    </div>
+                    <div class="cont">
+                        글 내용이 들어갑니다<br>
+                        글 내용이 들어갑니다<br>
+                        글 내용이 들어갑니다<br>
+                        글 내용이 들어갑니다<br>
+                        글 내용이 들어갑니다<br>
+                        글 내용이 들어갑니다<br>
+                        글 내용이 들어갑니다<br>
+                        글 내용이 들어갑니다
+                    </div>
+                </div>
+                <div class="answer_wrap">
+                <form action="#" class="answer_state_select">
+                    <label>처리 상태</label>
+                    <select name="answer_state" class="state_select" id="answer_state" >
+                       <option value="state1">답변대기</option>
+                       <option value="state2">답변완료</option>
+                    </select>
+                </form>
+                <form class="admin_answer_container">
+                    <label>작성자</label>
+                    <input type="text" id="id" class="admin_id"><br>
+         
+                    <label>제목</label> 
+                    <input type="text" id="title" class="answer_title"><br>
+         
+                    <label>내용</label> 
+                    <textarea id="content" class="answer_content"></textarea><br>
+                </form>
+
+                <div class="answer_bt_wrap">
+                    <a href="../test/일대일문의.html" class="on">목록</a>
+                    <a href="#">등록</a>
+                </div>
+              </div>
+
+            </div>
+        </div>
+
+        
+    </body>
+   
+</html>

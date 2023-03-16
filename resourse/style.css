@@ -1,0 +1,936 @@
+@charset "UTF-8";
+
+/*---------------------공통----------------------------*/
+
+/* nav 로고 */
+.nav_logo {
+    width: 70px;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+/* nav 메뉴 */
+.main-nav {
+    display: flex;
+    list-style-type: none;
+    font-size: 20px;
+    margin-top : 20px;
+}
+
+.main-nav a {
+    color : black;
+    font-size: 15px;
+    margin-right: 50px;
+    text-decoration-line :none;
+    font-weight: bolder;
+}
+
+.main-nav a:hover {
+    
+    font-weight: 800;
+    color:white;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #CDE990;
+    height: 70px;
+    /*position: sticky;
+    top: 0;*/
+    width: auto;
+    
+}
+
+/* 상단이동버튼 */
+.topbtn {
+    position :fixed;
+    top: 90%;
+    left: 95%;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    z-index : 2;
+}
+
+
+/* 사이드바 */
+.sub-menu {
+    border: 1px solid rgb(223, 217, 217);
+    border-radius: 10px;
+    margin-top: 80px;
+    margin-left: 70px;
+    width: 160px;
+    height: 350px;
+    vertical-align:middle;
+    position: fixed;
+}
+
+.sub-menu li {
+    margin-top: 50px;
+    text-decoration :none;
+    list-style-type: none;
+    text-align: center;
+}
+
+.sub-menu li :hover{
+    background-color: #CDE990;
+    color: #fff;
+}
+
+.sub-menu li a {
+    padding: 15px 20px;
+    text-decoration :none;
+    color: black;
+    font-weight: bolder;
+}
+
+
+/* 탑메뉴 */
+
+.top-menu {
+    top: 180px;
+    left: 400px;
+    width: 550px;
+    text-decoration :none;
+    list-style-type: none;
+    position: absolute;
+}
+
+.top-menu th {
+    font: bold;
+}
+
+.top-menu th a {
+    padding: 15px 20px;
+    text-decoration :none;
+    color: black;
+}
+
+.top-menu th :hover {
+    background-color: #CDE990;
+    color: #fff;
+}
+
+/*---------------------공통 끝----------------------------*/
+
+
+/*------------------로그인(현우)---------------------*/
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 로그인창 */
+.login_main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding-bottom: 100px;
+}
+
+.login_container {
+    width: 450px;
+    margin-top: 50px;
+}
+
+.login_logo {
+    width: 250px;
+}
+
+#login {
+    width: 100%;
+    background-color: #AACB73;
+    border-color: transparent;
+    color: white;
+}
+
+.account {
+    display: block;
+    margin-bottom: 10px;
+    width: 450px;
+    height: 35px;
+    padding: 6px;
+    border: 1px solid #444444;
+    border-radius: 7px;
+    font-size: 12px;
+}
+
+#alert {
+    border-color: transparent;
+}
+/*
+.save_id {
+    width: 100px;
+    margin-right: 300px;
+}
+
+.saveid {
+    font-size: small;
+}
+
+.idcheckbox{
+    color: #AACB73;
+} */
+
+
+/* 로그인창 footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid #D0D0D0;
+    
+}
+
+.wrapper {
+    margin: 15px auto; 
+    text-align:center;
+}
+
+
+/*-------------------회원관리(현우)------------------*/
+
+.search_area{
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 44%;
+  }
+  .search_area input{
+    height: 30px;
+    width: 200px;
+    background-color: #D0D0D0;
+    
+    
+  }
+  .search_area button{
+    width: 70px;
+    height: 36px;
+    margin-left: 20px;
+    background-color: #AACB73;
+    border-radius: 20px;
+    color: #fff;
+
+  }
+
+.userboard_wrap {
+
+    width: 600px;
+    margin : 50px 33%;
+}
+
+.userboard_list {
+    width : 100%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.userboard_list_top {
+    font-weight: bold;
+}
+
+.userboard_list > div {
+    font-size: 0;
+}
+
+.userboard_list > div > div {
+    display: inline-block;
+    padding: 10px 0;
+    text-align: center;
+    font-size:1rem;
+}
+
+.userboard_list :hover{
+   background-color:#D9D9D9;
+   cursor: pointer;
+}
+
+
+.userboard_list .name {
+    width:20%;
+}
+
+.userboard_list .id {
+    width:40%;
+}
+
+.userboard_list .phone {
+    width:40%;
+}
+
+.userboard_page {
+    margin-top: 30px;
+    text-align: center;
+}
+.userboard_page a {
+    margin: 2px 5px;
+    font-weight: bold;
+}
+
+.userboard_page :hover {
+    color: #AACB73;
+}
+
+/*---회원 상세 정보---*/
+
+/* 목차 */
+.subtitle {
+    display: flex;
+    margin-top: 55px;
+    margin-left: 30%;
+    width: 130px;
+    justify-content: space-between;
+    font-weight: bolder;   
+}
+
+.fa-stop {
+    padding-top: 4.3px;
+    color: #AACB73;
+}
+
+.subtitle_line {
+    width: 700px;
+    height: 3px;
+    background-color: black;
+    margin-left:30%;
+    margin-top: 15px;
+}
+
+/* 상세 회원정보 폼 */
+
+.user_info_container {
+    margin-left:37%;
+    margin-top: 50px;
+    width:600px;
+    justify-content: space-between; 
+}
+
+
+label {
+	display:inline-block;
+	width:80px;
+}
+
+.shortinfo {
+    margin-bottom: 10px;
+    width: 200px;
+    height: 28px;
+    padding: 6px;
+    background-color: #D9D9D9;
+    border-radius: 5px;
+}
+
+.longinfo {
+    margin-bottom: 10px;
+    width: 400px;
+    height: 28px;
+    padding: 6px;
+    background-color: #D9D9D9;
+    border-radius: 5px;
+}
+
+.grade_select,
+.au_select {
+    font-size: small;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 28px;
+    padding: 6px;
+    background-color: #D9D9D9;
+    border-radius: 5px;
+    background-image: url(/resourse/dropdown.svg);
+    background-size: 15px;
+    background-position: 90% 5px;
+}
+
+.info_btn {
+    text-align: center;
+    margin-top:50px;
+    margin-bottom: 100px;
+}
+
+.info_btn a {
+    display: inline-block;
+    margin : 10px;
+    width: 100px;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #AACB73;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* ---------------------- 결제/배송정보(현우) ----------------------- */
+
+.search_area{
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 44%;
+  }
+  .search_area input{
+    height: 30px;
+    width: 200px;
+    background-color: #D0D0D0;
+    border-radius: 10px;
+  }
+
+  .search_area button{
+    width: 70px;
+    height: 36px;
+    margin-left: 20px;
+    background-color: #AACB73;
+    border-radius: 20px;
+    color: #fff;
+
+  }
+
+.payboard_wrap {
+
+    width: 800px;
+    margin : 50px 27%;
+}
+
+.payboard_list {
+    width : 100%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.payboard_list_top {
+    font-weight: bold;
+}
+
+.payboard_list > div {
+    font-size: 0;
+}
+
+.payboard_list > div > div {
+    display: inline-block;
+    padding: 10px 0;
+    text-align: center;
+    font-size:1rem;
+}
+
+.payboard_list :hover{
+   background-color:#D9D9D9;
+   cursor: pointer;
+}
+
+
+.payboard_list .paydate {
+    width:20%;
+}
+
+.payboard_list .paynum {
+    width:10%;
+}
+
+.payboard_list .id {
+    width:40%;
+}
+
+.payboard_list .paystate {
+    width:20%;
+}
+
+.payboard_page {
+    margin-top: 30px;
+    text-align: center;
+}
+.payboard_page a {
+    margin: 2px 5px;
+    font-weight: bold;
+}
+
+.payboard_page :hover {
+    color: #AACB73;
+}
+
+/*----------------결제 배송 상세 추가 예정-----------------------------*/
+
+/*--------------------------------------------------------------------*/
+
+
+/*------------------고객센터-----------------------------*/
+
+/*----------------------1대1문의-------------------------*/
+
+/* 서브 메뉴 */
+.sub_top_menu {
+    width: 600px;
+    margin-top: 210px;
+    margin-left: 500px;
+    display: inline-block;
+    
+}
+
+.sub_top_menu th {
+    padding-left:  100px;
+    /*justify-content: space-between; */
+    
+}
+
+
+.sub_top_menu th:after {/*after 가상요소*/
+    display:block;
+    width:120px; /*혹시 a요소 크기만큼 생기길 바란다면 width 삭제*/     
+    content: '';/*comtent안은 밑줄 디자인.*/
+    border-bottom: solid 5px #AACB73;
+    padding-top: 10px;
+    transform: scaleX(0);/*크기를 0으로 줌으로써 평상시엔 밑줄 없음*/
+    transition: transform 250ms ease-in-out;
+ }
+ .sub_top_menu th:hover:after {
+    transform: scaleX(1);/*a 속성에 hover시 after를 기존 크기로 변경*/
+ }
+
+
+/*-----1대1문의 조회--- */
+
+.board_wrap {
+    width: 800px;
+    margin: 70px 400px;
+}
+
+.board_list {
+    width: 100%;
+    border-top: 2px solid #000;
+}
+
+.board_list > div {
+    border-bottom: 1px solid #ddd;
+    font-size: 0;
+}
+
+.board_list > div.top {
+    border-bottom: 1px solid #999;
+}
+
+.board_list > div:last-child {
+    border-bottom: 1px solid #000;
+}
+
+.board_list > div > div {
+    display: inline-block;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.board_list > div.top > div {
+    font-weight: 600;
+}
+
+.board_list .num {
+    width: 10%;
+}
+
+.board_list .title {
+    width: 60%;
+    text-align: left;
+}
+
+.board_list .top .title {
+    text-align: center;
+}
+
+.board_list .writer {
+    width: 10%;
+}
+
+.board_list .date {
+    width: 10%;
+}
+
+.board_list .count {
+    width: 10%;
+}
+
+.board_page {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0;
+}
+
+.board_page a {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    box-sizing: border-box;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    border-left: 0;
+    line-height: 100%;
+}
+
+.board_page a.bt {
+    padding-top: 10px;
+    font-size: 1rem;
+    letter-spacing: -1px;
+}
+
+.board_page a.num {
+    padding-top: 9px;
+    font-size: 1rem;
+}
+
+.board_page a.num.on {
+    border-color:#AACB73;
+    background: #AACB73;
+    color: #fff;
+}
+
+.board_page a:first-child {
+    border-left: 1px solid #ddd;
+}
+
+/*----------1대1조회 답변--------------*/
+
+.board_view {
+    width: 100%;
+    border-top: 2px solid #000;
+}
+
+.board_view .title {
+    font-size: large;
+    font-weight: bold;
+    padding: 10px;
+}
+
+
+.board_view .info {
+    padding: 15px;
+    border-bottom: 1px solid #999;
+
+    font-size: 0;
+}
+
+.board_view .info dl {
+    position: relative;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.board_view .info dl:first-child {
+    padding-left: 0;
+}
+
+.board_view .info dl::before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 0;
+    display: block;
+    width: 1px;
+    height: 13px;
+    background: #ddd;
+    
+}
+
+.board_view .info dl:first-child::before {
+    display: none;
+}
+
+.board_view .info dl dt,
+.board_view .info dl dd {
+    display: inline-block;
+    font-size: 1rem;
+   
+}
+
+.board_view .info dl dt {
+   
+}
+
+.board_view .info dl dd {
+    margin-left: 10px;
+    color: #777;
+}
+
+.board_view .cont {
+    padding: 15px;
+    border-bottom: 1px solid #000;
+    line-height: 160%;
+    font-size: 1rem;
+}
+
+.answer_wrap {
+    width: 800px;
+    height: auto;
+    background-color: #ddd;
+    padding: 20px;
+    font-size: small;
+
+}
+
+.answer_state_select {
+    margin-bottom: 10px;
+}
+
+.state_select {
+    width: 120px;
+    background-color: #fff;
+    border-radius: 5px;
+    border-color: #000;
+    padding: 2px;
+    background-image: url(/resourse/dropdown.svg);
+    background-size: 10px;
+    background-position: 90% 5px;
+    font-size:small;
+}
+
+.admin_answer_container > *{
+    margin-bottom: 10px;
+    vertical-align:middle;
+}
+
+.admin_id {
+    width: 100px;
+    border-bottom: 1px solid #444444;
+    padding: 2px;
+}
+
+.answer_title {
+    width: 600px;
+    border-radius: 3px;
+    border: 1px solid #444444;
+    padding: 2px;
+
+}
+
+.answer_content {
+    width: 600px;
+    height: 150px;
+    border-radius: 3px;
+    border: 1px solid #444444;
+    padding: 2px; 
+    word-wrap: break-word;
+    word-break: break-all;
+    resize: none;
+    overflow-y: scroll;
+    
+}
+
+.answer_bt_wrap {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 0;
+}
+
+.answer_bt_wrap a {
+    display: inline-block;
+    width: 80px;
+    margin-left: 10px;
+    padding: 5px;
+    background-color: #AACB73;
+    border-radius: 20px;
+    color: #fff;
+    font-size: small;
+    font-weight: 1000;
+}
+
+/* 일대일 처리 완료 */
+
+
+.qnaover_board_wrap {
+    width: 800px;
+    margin: 70px 400px;
+}
+
+.qnaover_board_list {
+    width: 100%;
+    border-top: 2px solid #000;
+}
+
+.qnaover_board_list > div {
+    border-bottom: 1px solid #ddd;
+    font-size: 0;
+}
+
+.qnaover_board_list > div.top {
+    border-bottom: 1px solid #999;
+}
+
+.qnaover_board_list > div:last-child {
+    border-bottom: 1px solid #000;
+}
+
+.qnaover_board_list > div > div {
+    display: inline-block;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.qnaover_board_list > div.top > div {
+    font-weight: 600;
+}
+
+.qnaover_board_list .num {
+    width: 10%;
+}
+
+.qnaover_board_list .title {
+    width: 50%;
+    text-align: left;
+}
+
+.qnaover_board_list .top .title {
+    text-align: center;
+}
+
+.qnaover_board_list .writer {
+    width: 10%;
+}
+
+.qnaover_board_list .writer {
+    width: 10%;
+}
+
+.qnaover_board_list .date {
+    width: 10%;
+}
+
+.qnaoverboard_list .count {
+    width: 10%;
+}
+
+.check {
+    accent-color: #3C6255;
+}
+
+.qnaover_board_page {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0;
+}
+
+.qnaover_board_page a {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    box-sizing: border-box;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    border-left: 0;
+    line-height: 100%;
+}
+
+.qnaover_board_page a.bt {
+    padding-top: 10px;
+    font-size: 1rem;
+    letter-spacing: -1px;
+}
+
+.qnaover_board_page a.num {
+    padding-top: 9px;
+    font-size: 1rem;
+}
+
+.qnaover_board_page a.num.on {
+    border-color:#AACB73;
+    background: #AACB73;
+    color: #fff;
+}
+
+.qnaover_board_page a:first-child {
+    border-left: 1px solid #ddd;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---게시물 작성이라 제외 예정 */
+.board_write {
+    border-top: 2px solid #000;
+}
+
+.board_write .title,
+.board_write .info {
+    padding: 15px;
+}
+
+.board_write .info {
+    border-top: 1px dashed #ddd;
+    border-bottom: 1px solid #000;
+    font-size: 0;
+}
+
+.board_write .title dl {
+    font-size: 0;
+}
+
+.board_write .info dl {
+    display: inline-block;
+    width: 50%;
+    vertical-align: middle;
+}
+
+.board_write .title dt,
+.board_write .title dd,
+.board_write .info dt,
+.board_write .info dd {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1rem;
+}
+
+.board_write .title dt,
+.board_write .info dt {
+    width: 100px;
+}
+
+.board_write .title dd {
+    width: calc(100% - 100px);
+}
+
+.board_write .title input[type="text"],
+.board_write .info input[type="text"],
+.board_write .info input[type="password"] {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.board_write .title input[type="text"] {
+    width: 80%;
+}
+
+.board_write .cont {
+    border-bottom: 1px solid #000;
+}
+
+.board_write .cont textarea {
+    display: block;
+    width: 100%;
+    height: 300px;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 0;
+    resize: vertical;
+}
+
+
